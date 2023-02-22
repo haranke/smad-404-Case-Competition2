@@ -1,0 +1,487 @@
+/* ADD YOUR CUSTOM CSS TO THIS FILE */
+
+h1 {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 40px;
+  }
+
+  h2 {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 40px;
+  }
+
+  h4 {
+    font-family: 'Domine', serif;
+  }
+
+  h5 {
+    font-family: 'Domine', serif;
+  }
+
+  p {
+    font-family: 'Domine', serif;
+  }
+
+ .btn {
+    font-family: 'Domine', serif;
+  }
+
+body {
+    background-color: #242424;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.dropdown-item {
+    color: #b63939;
+}
+
+nav {
+    font-family: 'Domine', serif;
+}
+
+.nav-link {
+    color: #b63a3a;
+    padding-top:20px;
+}
+
+.navbar-toggler:focus {
+    box-shadow:none;
+}
+
+nav .nav-item a:hover {
+    color:#ff7b42;
+}
+
+nav .nav-item a:active {
+    color:#ff7b42;
+}
+
+.active {
+    color:#ff7b42;
+}
+
+.header {
+    padding: 0px;
+}
+
+.featured {
+        grid-row: 3/4;
+        grid-column: 1/13;
+        text-align: center;
+        padding-top: 30px;
+}
+
+.other-works {
+        grid-row: 3/4;
+        grid-column: 1/13;
+        padding: 30px;
+}
+
+.about {
+    grid-row: 3/4;
+    grid-column: 1/13;
+    padding: 30px;
+}
+
+.footer {
+    color: #fff;
+    text-align:center;
+    font-family: 'Proza Libre', sans-serif;
+
+}
+
+.row {
+    color: #fff;
+    padding: 20px;
+}
+
+.collapsible {
+    max-width: 1300px;
+    overflow: hidden;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.collapsible input {
+    display:none;
+
+}
+
+
+.collapsible label {
+    position: relative;
+    font-weight: 900px;
+    background: #2f2f2f;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px rgba(0, 0, 0, .08);
+    color:#ffffff;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius:4px;
+    z-index: 1;
+}
+
+.collapsible label::after {
+    content: "";
+    position: absolute;
+    right:15px;
+    top:15px;
+    width:18px;
+    height: 18px;
+    background-image:"arrow.png" no-repeat 0 0;
+    transition: all 0.3s ease;
+}
+
+.collapsible input:checked + label:after {
+    transform: rotate(90deg);
+
+}
+
+.collapsible-text {
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.;
+    position: relative;
+    top:-100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.collapsible input:checked ~ .collapsible-text {
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: #2f2f2f;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px rgba(0, 0, 0, .08);
+    opacity: 1;
+    top:0;
+}
+
+.collapsible-text h2 {
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color:#fff;
+}
+
+.collapsible-text p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.collapsible2 {
+    max-width: 1300px;
+    overflow: hidden;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.collapsible2 input {
+    display:none;
+
+}
+
+
+.collapsible2 label {
+    position: relative;
+    font-weight: 900px;
+    background: #2f2f2f;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px rgba(0, 0, 0, .08);
+    color:#ffffff;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius:4px;
+    z-index: 1;
+}
+
+.collapsible2 label::after {
+    content: "";
+    position: absolute;
+    right:15px;
+    top:15px;
+    width:18px;
+    height: 18px;
+    background-image:"arrow.png" no-repeat 0 0;
+    transition: all 0.3s ease;
+}
+
+.collapsible2 input:checked + label:after {
+    transform: rotate(90deg);
+
+}
+
+.collapsible2-text {
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.;
+    position: relative;
+    top:-100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.collapsible2 input:checked ~ .collapsible2-text {
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: #2f2f2f;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px rgba(0, 0, 0, .08);
+    opacity: 1;
+    top:0;
+}
+
+.collapsible2-text h2 {
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color:#fff;
+}
+
+.collapsible2-text p {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    color:#fff;
+}
+
+.collapsible3 {
+    max-width: 1300px;
+    overflow: hidden;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.collapsible3 input {
+    display:none;
+
+}
+
+
+.collapsible3 label {
+    position: relative;
+    font-weight: 900px;
+    background: #2f2f2f;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px rgba(0, 0, 0, .08);
+    color:#ffffff;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius:4px;
+    z-index: 1;
+}
+
+.collapsible3 label::after {
+    content: "";
+    position: absolute;
+    right:15px;
+    top:15px;
+    width:18px;
+    height: 18px;
+    background-image:"arrow.png" no-repeat 0 0;
+    transition: all 0.3s ease;
+}
+
+.collapsible3 input:checked + label:after {
+    transform: rotate(90deg);
+
+}
+
+.collapsible3-text {
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.;
+    position: relative;
+    top:-100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.collapsible3 input:checked ~ .collapsible3-text {
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: #2f2f2f;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px rgba(0, 0, 0, .08);
+    opacity: 1;
+    top:0;
+}
+
+.collapsible3-text h2 {
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color:#fff;
+}
+
+.collapsible3-text p {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    color:#fff;
+}
+
+/* book 4 */
+
+.collapsible4 {
+    max-width: 1300px;
+    overflow: hidden;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.collapsible4 input {
+    display:none;
+
+}
+
+
+.collapsible4 label {
+    position: relative;
+    font-weight: 900px;
+    background: #2f2f2f;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px rgba(0, 0, 0, .08);
+    color:#ffffff;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius:4px;
+    z-index: 1;
+}
+
+.collapsible4 label::after {
+    content: "";
+    position: absolute;
+    right:15px;
+    top:15px;
+    width:18px;
+    height: 18px;
+    background-image:"arrow.png" no-repeat 0 0;
+    transition: all 0.3s ease;
+}
+
+.collapsible4 input:checked + label:after {
+    transform: rotate(90deg);
+
+}
+
+.collapsible4-text {
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.;
+    position: relative;
+    top:-100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.collapsible4 input:checked ~ .collapsible4-text {
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: #2f2f2f;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px rgba(0, 0, 0, .08);
+    opacity: 1;
+    top:0;
+}
+
+.collapsible4-text h2 {
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color:#fff;
+}
+
+.collapsible4-text p {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    color:#fff;
+}
+
+/* book 5 */
+
+.collapsible5 {
+    max-width: 1300px;
+    overflow: hidden;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.collapsible5 input {
+    display:none;
+
+}
+
+
+.collapsible5 label {
+    position: relative;
+    font-weight: 900px;
+    background: #2f2f2f;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px rgba(0, 0, 0, .08);
+    color:#ffffff;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius:4px;
+    z-index: 1;
+}
+
+.collapsible5 label::after {
+    content: "";
+    position: absolute;
+    right:15px;
+    top:15px;
+    width:18px;
+    height: 18px;
+    background-image:"arrow.png" no-repeat 0 0;
+    transition: all 0.3s ease;
+}
+
+.collapsible5 input:checked + label:after {
+    transform: rotate(90deg);
+
+}
+
+.collapsible5-text {
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.;
+    position: relative;
+    top:-100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.collapsible5 input:checked ~ .collapsible5-text {
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: #2f2f2f;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px rgba(0, 0, 0, .08);
+    opacity: 1;
+    top:0;
+}
+
+.collapsible5-text h2 {
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color:#fff;
+}
+
+.collapsible5-text p {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    color:#fff;
+}
+
+.stars {
+    font-family: 'Domine', serif;
+}
+
+.name {
+    color:#ff7b42;
+}
