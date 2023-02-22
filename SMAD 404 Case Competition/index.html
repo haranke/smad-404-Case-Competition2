@@ -7,6 +7,7 @@
     <meta name="author" content="Kamryn Haran">
     <title>Suzanne Collins</title>
 
+
     <!-- LOAD BOOTSTRAP CSS - DO NOT DELETE -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
@@ -16,40 +17,138 @@
     <!-- Custom styles -->
     <link href="style.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine&family=Proza+Libre:wght@600&display=swap" rel="stylesheet">
+
+  
+
   <style>
 
-.container {
-	display:grid;
-  grid-template-columns:repeat(12, 1fr);
-	grid-template-rows:auto;
-  color: red;
+h1 {
+  font-size: 50px;
 }
 
-.container-fluid {
-	grid-column: 1/12;
-	grid-row: 2/3;
-	background-image: url("images/sc-header2.png");
-	background-size: 100%;
-  	width: 1550px;
-  	height: 550px;
-	color:white;
+h2 
+{
+  padding-top: 15px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+h3 {
+  padding-top: 20px;
+  font-family: 'Domine', serif;
+  color: white;
+}
+
+.featured {
+  color: white;
+}
+
+.other-works {
+  color: white;
+}
+
+.about {
+  color: white;
+}
+
+
+
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  right:8%
+  
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left:23%;
+  transform: translate(-50%, -50%);
 }
 
 input.right {
         float: right;
       }
 
+.award {
+  position: relative;
+  text-align: center;
+  
+}
+
+.sc {
+  display: flex;
+  justify-content: center;
+}
+
+.card-body {
+  padding: 90px;
+  background-color: #2f2f2f;
+}
+
+.card-body1 {
+  padding: 90px;
+  background-color: #646463;
+}
+
+.book {
+  grid-row: 3/4;
+  grid-column: 1/13;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 35px;
+  border: none;
+  outline: none;
+  background-color: #b63939;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 15px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+footer {
+  color: white;
+  text-align: center;
+}
+
   </style>
+
 
   </head>
 
 
   <body>
 
+    <!--Back to top button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class='bx bxs-chevron-up'></i></button>
+
+    
+
 <!--Nav start-->
     <nav class="navbar navbar-expand-md bg-black">
       <a href="index.html" class="navbar-brand fs-3 ms-3 text-white">
-      <img src="images/logo.png" style="height: 150px;"></a>
+      <img src="images/logo.png" style="height: 150px;" alt="Suzanne Collins logo"></a>
       <button class="navbar-toggler me-3 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
         <i class='bx bx-menu bx-md'></i>
       </button>
@@ -57,7 +156,7 @@ input.right {
        <div class=" collapse navbar-collapse ul-bg active" id="btn">
        <ul class="navbar-nav ms-auto">
         <li class="nav-item mx-3 fs-4">
-        <a href="index.html" class="nav-link" style="color:#ff7b42;" alt="Suzanne Collins Logo">Home</a>
+        <a href="index.html" class="nav-link" style="color:#ff7b42;">Home</a>
         </li>
 
         <li class="nav-item dropdown">
@@ -88,7 +187,7 @@ input.right {
             <a href="#" class="nav-link mx-3 fs-4">Interview</a>
           </li>
 
-          <li class="nav-itme">
+          <li class="nav-item">
             <a href="#" class="nav-link mx-3 fs-4 text-white">
               <i class='bx bx-cart'></i>
             </a>
@@ -96,56 +195,198 @@ input.right {
 
         </ul>
   </div>
-</nav>
-<!--Nav End -->
+</nav><!--Nav End -->
 
 <div class="header">
-  <img src="images/sc-header.png" class="img-fluid" alt="Header image">
+  <img src="images/header.png" class="img-fluid" alt="Header image">
 </div>
     
+<!--Start of featured section-->
 
 <div class="featured">
   <h1>
-    <p class="text-center text-white">Featured Work</p>
+    Featured Work
   </h1>
-  <h3><p class="text-center text-white">
-    Suzanne Collins' newest novel of <i>The Hunger Games</i> series is available now! 
-  </p>
-</h3>
-
-  <img src="images/book1.png" class="novel1" alt="Novel, The Ballad of Songbirds and Snakes">
-
-
-<h2><p class="text-center text-white font-weight-bold">
-  The Ballad of Songbirds and Snakes
-</p>
-<button type="button" class="btn btn-danger btn-md">Buy Now!</button>
-</h2>
+  <h3>
+    Suzanne Collins' newest novel is now available! 
+  </h3>
 </div>
 
-<span class="align-top">top</span>
+<div class="book">
+    <img src="images/book2.png" class="novel1" alt="Novel, The Ballad of Songbirds and Snakes">
+  
+      <h2>
+        The Ballad of Songbirds and Snakes
+    </h2>
+      <a href="hunger-games-novels.html"><button type="button" class="btn btn-outline-danger btn-lg">Buy Now</button></a>
+  
+</div>
+<!--End of featured section-->
+
+
+<!--Start of other works section-->
+<span class="align-top"></span>
 
 <div class="other-works">
   <h1>
-    <p class="text-left text-white mx-3">Other Works</p>
+    Other Works
   </h1>
-
 </div>
 
-<div class="container-fluid py-5">
-  <p class="col-md-10 fs-4">Suzanne Collins is best known for</p>
-  <p class="col-md-10 fs-4"> her series, <i>The Hunger Games.</i></p>
-  <p class="col-md-10 fs-4">Suzanne is also the author of</p>
-  <p class="col-md-10 fs-4"><i>The Underland Chronicles</i> and</p>
-  <p class="col-md-10 fs-4">two picture books.</p>
+<div class="container">
+  <img src="images/sc-header2.png" alt="Image of the three Hunger Games books" style="width:120%;">
   
-<a href="hunger-games-novels.html" target="_blank">
-  
-  <button class=" right btn btn-light btn-lg" type="button" style="float: right; bottom: 30px;">Discover Now!</button> </a>
 
+  <div class="centered" style="width: 40%; position: absolute;"><h5>Suzanne Collins is best known for her trilogy series,<i> The Hunger Games.</i> Suzanne is also the author of the five book series, <i>The Underland Chronicles</i> and two picture books for children ages 4-8 years old.</h5> <br>
+  
+    <a href="works.html" target="_blank"> <button class=" btn btn-danger btn-lg" type="button">Discover Now!</button> </a>
+  
+  </div>
+</div><!--End of other works section-->
+
+&nbsp;
+
+<!--Start of about me section-->
+<div class="about">
+  <h1>
+    About Me
+  </h1>
 </div>
 
+<div class="about2">
+  <div class="row justify-content-start">
+    <div class="col-sm-5 col-md-6">
+      <h4>Hello, I am Suzanne Collins!<br> <br>I am an American author and television writer. I started my professional career writing for children's television. The first series I have written is <i>The Underland Chronicles</i> which became a New York Times bestseller. <br> <br> My second series, <i>The Hunger Games,</i> became an international bestseller. This series spent six years on The New York Times bestseller list. These novels were released as film adaptations by Lionsgate starting in 2012 with <i>The Hunger Games,</i> <i>The Hunger Games: Catching Fire</i> (2013), <i>The Hunger Games: Mockingjay</i> - Part 1 (2014), and <i>The Hunger Games: Mockingjay</i> Part 2 (2015). The entire franchise made nearly $3 billion. <br> <br> In 2013, I released a critically acclaimed autobiographical picture pook, <i>Year of the Jungle</i> after my first picture book, <i>When Charlie McButton Lost Power</i> in 2005. My books have sold over 100 million copies worldwide.
+      </h4>
+    </div>
   
+    <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+    <div class="sc">
+      <img src="images/sc.jpeg" alt="Portrait of Suzanne Collins" class="img-fluid rounded-circle" style="width:70%; position: relative; ">
+    </div>
+    </div>
+
+</div> <!--End of about me section-->
+    
+    &nbsp;
+    &nbsp;
+    &nbsp;
+
+    <!--Start of Awards and Honors section-->
+    <div class="awards">
+      <h1 class= "text-center text-white mx-3">Awards and Honors</h1>
+      <br>
+
+      <div class="award">
+        <div class="row">
+          <div class="col">
+            <div class="card bg-black text-white h-100">
+              <div class="card-body"><h4>#1 USA Today <br> Bestseller </h4></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-black text-white h-100">
+              <div class="card-body1"><h4>#1 New York Times Bestseller</h4></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-black text-white h-100">
+              <div class="card-body"><h4>#1 Wall Street Journal Bestseller</h4></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="award">
+        <div class="row">
+          <div class="col">
+            <div class="card bg-black text-white h-100">
+              <div class="card-body1"><h4>#1 Publishers Weekly Bestseller<p></p> </h4>&nbsp;</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-black text-white h-100">
+              <div class="card-body"><h4>A Barnes & Noble Best YA Science Fiction and Fantasy Book of 2020</h4></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-black text-white h-100">
+              <div class="card-body1"><h4>An Amazon Best Science Fiction and Fantasy Book of 2020</h4></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="award">
+        <div class="row">
+          <div class="col">
+            <div class="card bg-black text-white h-100">
+              <div class="card-body"><h4>2020 Goodreads Choice Award Final Round--YA Fantasy </h4> </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-black text-white h-100">
+              <div class="card-body1"> <h4>Waterstones Best Books of 2020: Science Fiction & Fantasy </h4></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-black text-white h-100">
+              <div class="card-body"> <h4>Cosmopolitan's 20 Best YA Books of 2020</h4></div>
+            </div>
+          </div>
+
+      <div class="award">
+        <div class="row">
+          <div class="col">
+            <div class="card bg-black text-white h-100">
+              <div class="card-body"><h4> <br> <p></p>Today's Best YA Books of 2020 </h4> 
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card bg-black text-white h-100">
+              <div class="card-body"><h4>2021 Kids' Book Choice Awards Finalist: Best Fantasy World Builder - Suzanne Collins/The Ballad of Songbirds and Snakes, A Hunger Games Novel </h4></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div> <!--Awards and honors section end-->
+
+    &nbsp;
+
+
+    
+<!--Footer-->
+<footer>
+  <p>&copy; 2023 Suzanne Collins. All Rights Reserved. </p>
+</footer>
+
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 
 <!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

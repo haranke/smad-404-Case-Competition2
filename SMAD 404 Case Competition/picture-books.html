@@ -17,6 +17,178 @@
     <link href="style.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine&family=Proza+Libre:wght@600&display=swap" rel="stylesheet">
+
+
+<style>
+
+
+
+
+  .container {
+            display: grid;
+            grid-template-columns:repeat(12, 1fr);
+            padding-top: 20px;
+        }
+
+  .book1 {
+            grid-column:1/13;
+            padding-top: 30px;
+
+        }
+
+  .text1 {
+    grid-column: 1/13;
+    padding-top: 20px;
+  
+  }
+
+  .book2 {
+    grid-column:1/13;
+    padding-top: 40px;
+
+        }
+
+  .text2{
+    grid-column: 1/13;
+    padding-top: 40px;
+  }
+
+  h1 {
+    color: #fff;
+    padding-top: 20px;
+  }
+
+  h5 {
+    color: #fff;
+    float: right;
+    padding-right: 30px;
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 35px;
+  }
+
+  p {
+    color: #fff;
+    padding-top: 40px;
+    padding-right: 40px;
+    font-size: 18px;
+  }
+
+  h4 {
+    color: #fff;
+    padding: 10px;
+  }
+
+  .stars 
+  {
+    color: #fff;
+    padding-left: 5px;
+    padding-top: 10px;
+    font-size: 20px;
+  }
+
+  .buy {
+    float: right;
+    padding-right: 15px;
+  }
+
+  .collapsible {
+    grid-column: 1/13;
+  }
+
+  .collapsible2 {
+    grid-column: 1/13;
+  }
+
+  label {
+    color: #fff;
+  }
+
+  h6 {
+    color: #fff;
+  }
+  
+
+  footer {
+    grid-column: 1/13;
+    text-align: center;
+  }
+
+
+
+
+  @media only screen and (min-width:620px) {
+    .book1 {
+      grid-column: 1/7;
+      grid-row:1/2;
+    }
+
+    .text1 {
+      grid-column: 7/13;
+      grid-row:1/2;
+    }
+
+    .collapsible {
+      grid-column: 1/13;
+      grid-row: 2/3;
+    }
+
+    .book2 {
+      grid-column: 1/7;
+      grid-row:3/4;
+    }
+
+    .text2 {
+      grid-column: 7/13;
+      grid-row:3/4;
+    }
+
+    .collapsible2 {
+      grid-column: 1/13;
+      grid-row: 4/5;
+    }
+
+
+        }  
+        
+   @media only screen and (min-width:900px) {  
+    .book1 {
+      grid-column: 1/7;
+    }
+
+    .text1 {
+      grid-column: 7/13;
+    }
+
+    .collapsible {
+    grid-column: 1/13;
+    grid-row: 2/3;
+    }
+
+    .book2 {
+      grid-column: 1/7;
+      grid-row:3/4;
+    }
+
+    .text2 {
+      grid-column: 7/13;
+      grid-row:3/4;
+    }
+
+    .collapsible2 {
+      grid-column: 1/13;
+      grid-row: 4/5;
+    }
+
+   }
+
+
+</style>
 
   </head>
 
@@ -27,7 +199,7 @@
     <nav class=" navbar navbar-expand-md bg-black">
 
       <a href="index.html" class="navbar-brand fs-3 ms-3 text-white">
-        <img src="images/logo.png" style="height: 150px;"></a>
+        <img src="images/logo.png" style="height: 150px;" alt="Suzanne Collins logo"></a>
 
       <button class="navbar-toggler me-3 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
         <i class='bx bx-menu bx-md '></i>
@@ -76,7 +248,91 @@
     </nav>
     <!--End of Nav-->
 
-  <h1>Your content goes here</h1>
+    <div class="header">
+      <img src="images/picture-header.png" class="img-fluid" alt="Header image for picture books">
+    </div>
+
+<div class="container">
+
+<!--Book 1 start-->
+  <div class="book1">
+  <img src="images/picture1.jpg" class="img-fluid" width="520" alt="Novel, When Charlie McButton Lost Power">
+  </div>
+
+  <div class="text1">
+    <h2>When Charlie McButton Lost Power</h2>
+    <h5>$6.99</h5>
+    <h4>By Suzanne Collins</h4>
+    <div class="buy">
+      <a href="https://www.amazon.com/When-Charlie-McButton-Lost-Power/dp/0142408573"><button type="button" class="btn btn-outline-danger btn-lg">Buy Now</button></a>
+      </div>
+
+    <div class="stars">
+      <i class='bx-fw bx bxs-star bx-sm'></i>
+      <i class='bx-fw bx bxs-star bx-sm'></i>
+      <i class='bx-fw bx bxs-star bx-sm'></i>
+      <i class='bx-fw bx bxs-star bx-sm'></i>
+      <i class='bx-fw bx bxs-star bx-sm'></i> 4.8/5 on Amazon
+  </div>
+  
+    <p>Charlie McButton likes computer games so much, he never plays with anything else. When a thunderstorm knocks out the electricity, his tech empire comes tumbling down, and his whole world loses power. Charlie needs batteries—FAST! But the only triple- A's he can find are in his little sister's talking doll. Will he resort to desperate measures and cause his sister to have a meltdown of her own? Or will he snap out of his computer craze long enough to realize his sister might be fun, even if she doesn't come with batteries?</p>
+    </div>
+
+    <div class="collapsible">
+      <input type="checkbox" id="collapsible-head">
+      <label for="collapsible-head"> <h4>Reviews <i class='bx bxs-chevron-down' style='color:#ffffff'></i> </h4> </label> 
+      <div class="collapsible-text">
+        <h4>"A clever, humorous story in rhyme."
+          <div class="name">- <i>School Library Journal</i></div></h4>
+          <h4>"When Charlie McButton Lost Power is refreshingly original and moving!" <div class="name"><i>- Midwest Book Review</i></div></h4>
+      </div>
+
+    </div><!--Collapsible div-->
+    <!--End of book 1-->
+
+
+    <!--Book 2 start-->
+    <div class="book2">
+      <img src="images/picture2.jpeg" class="img-fluid" width="520" alt="Novel, When Charlie McButton Lost Power">
+      </div>
+    
+      <div class="text2">
+        <h2>Year of the Jungle</h2>
+        <h5>$10.49</h5>
+        <h4>By Suzanne Collins</h4>
+        <div class="buy">
+          <a href="https://www.amazon.com/Year-Jungle-Suzanne-Collins/dp/0545425166"><button type="button" class="btn btn-outline-danger btn-lg">Buy Now</button></a>
+          </div>
+    
+        <div class="stars">
+          <i class='bx-fw bx bxs-star bx-sm'></i>
+          <i class='bx-fw bx bxs-star bx-sm'></i>
+          <i class='bx-fw bx bxs-star bx-sm'></i>
+          <i class='bx-fw bx bxs-star bx-sm'></i>
+          <i class='bx-fw bx bx-star' style='color:#ffffff'></i> 3.9/5 on Amazon
+      </div>
+      
+        <p>Suzanne Collins has created a deeply moving autobiographical picture book about a father who must go off to the war in Vietnam -- and the daughter who stays behind. When young Suzy's father leaves for Vietnam, she struggles to understand what this means for her and her family. What is the jungle like? Will her father be safe? When will he return? The months slip by, marked by the passing of the familiar holidays and the postcards that her father sends. With each one, he feels more and more distant, until Suzy isn't sure she'd even recognize her father anymore.</p>
+        </div>
+    
+        <div class="collapsible2">
+          <input type="checkbox" id="collapsible2-head">
+          <label for="collapsible2-head"> <h4>Reviews <i class='bx bxs-chevron-down' style='color:#ffffff'></i> </h4> </label> 
+          <div class="collapsible2-text">
+            <h4>"Collins's picture book may be a good tool to discuss the complex feelings war brings into a household. ..."Year of the Jungle" brings up big questions. Parents will need to provide the answers." <div class="name"><i>-The New York Times, Danielle Trussoni</i></div></h4>
+            
+            <h4>"Collins holds firm to her childhood memories, creating a universal story for any child whose life is disrupted by war. Important and necessary. (Picture book. 4-10)." <div class="name"><i>-Kirkus Reviews,</i> STARRED REVIEW</div></h4>
+          </div>
+    
+           <!--Footer-->
+    <footer>
+      <p>&copy; 2023 Suzanne Collins. All Rights Reserved. </p>
+    </footer>
+
+        </div><!--Collapsible div-->
+
+</div><!--container div-->
+
 
 <!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

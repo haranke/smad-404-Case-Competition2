@@ -17,6 +17,331 @@
     <link href="style.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine&family=Proza+Libre:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+
+
+  .container {
+            display: grid;
+            grid-template-columns:repeat(12, 1fr);
+            padding-top: 20px;
+        }
+
+        h1 {
+    color: #ffffff;
+    padding-top: 20px;
+  }
+
+  h2 {
+    color: #ffffff;
+    font-size: 35px;
+  }
+
+  h3 {
+    color: #ffffff;
+  }
+
+  h4 {
+    color: #ffffff;
+    padding: 10px;
+  }
+
+  h5 {
+    color: #ffffff;
+    float: right;
+    padding-right: 30px;
+  }
+
+  p {
+    color: #ffffff;
+    padding-top: 40px;
+    padding-right: 50px;
+    font-size: 18px;
+  }
+
+  .buy {
+    float: right;
+    padding-right: 15px;
+  }
+
+
+  .book1 {
+      grid-column:1/13;
+      padding-top: 30px;
+      padding-left: 100px;
+
+  }
+
+  .text1 {
+    grid-column: 1/13;
+    padding-top: 20px;
+  
+  }
+
+  .stars 
+  {
+    color: #fff;
+    padding-left: 5px;
+    padding-top: 10px;
+    font-size: 20px;
+  }
+
+  .collapsible {
+    grid-column: 1/13;
+  }
+
+
+  .text2{
+    grid-column: 1/13;
+    padding-top: 50px;
+  }
+
+  .book2 {
+    grid-column:1/13;
+    padding-top: 50px;
+    padding-left: 100px;
+
+        }
+
+  .collapsible2 {
+    grid-column: 1/13;
+  }
+
+  .book3 {
+      grid-column:1/13;
+      padding-top: 50px;
+      padding-left: 100px;
+
+  }
+
+  .text3 {
+    grid-column: 1/13;
+    padding-top: 50px;
+    padding-right: 40px;
+  
+  }
+  .collapsible3 {
+    grid-column: 1/13;
+  }
+
+  .text4{
+    grid-column: 1/13;
+    padding-top: 50px;
+  }
+
+  .book4 {
+    grid-column:1/13;
+    padding-top: 50px;
+    padding-left: 100px;
+
+        }
+
+ .collapsible4 {
+    grid-column: 1/13;
+  }
+
+  footer {
+    grid-column: 1/13;
+    text-align: center;
+  }
+
+  .book5 {
+      grid-column:1/13;
+      padding-top: 40px;
+      padding-left: 100px;
+
+  }
+
+  .text5 {
+    grid-column: 1/13;
+    padding-top: 40px;
+    padding-right: 20px;
+  
+  }
+
+  .bundle {
+    grid-column:1/13;
+      padding-top: 40px;
+      padding-left: 100px;
+  }
+
+  .text6 {
+    grid-column: 1/13;
+    padding-top: 40px;
+  }
+
+  .collapsible5 {
+    grid-column: 1/13;
+  }
+
+  @media only screen and (min-width:620px) {
+    .book1 {
+      grid-column: 1/7;
+      grid-row:1/2;
+    }
+
+    .text1 {
+      grid-column: 7/13;
+      grid-row:1/2;
+    }
+
+    .collapsible {
+      grid-column: 1/13;
+      grid-row: 2/3;
+    }
+
+    .text2 {
+      grid-column: 1/7;
+      grid-row:3/4;
+    }
+
+    .book2 {
+      grid-column: 7/13;
+      grid-row:3/4;
+    }
+
+    .collapsible2 {
+      grid-column: 1/13;
+      grid-row: 4/5;
+    }
+
+    .book3 {
+      grid-column: 1/7;
+      grid-row:5/6;
+    }
+
+    .text3 {
+      grid-column: 7/13;
+      grid-row:5/6;
+    }
+
+    .collapsible3 {
+      grid-column: 1/13;
+      grid-row: 6/7;
+    }
+
+    .text4 {
+      grid-column: 1/7;
+      grid-row:7/8;
+    }
+
+    .book4 {
+      grid-column: 7/13;
+      grid-row:7/8;
+    }
+
+    .collapsible4 {
+      grid-column: 1/13;
+      grid-row:8/9
+    }
+
+    .book5 {
+      grid-column: 1/7;
+      grid-row:9/10;
+    }
+
+    .text5 {
+      grid-column: 7/13;
+      grid-row:9/10;
+    }
+
+    .collapsible5 {
+      grid-column: 1/13;
+      grid-row:10/11
+    }
+
+    .bundle {
+      grid-column: 1/7;
+      grid-row:11/12;
+    }
+
+    .text6 {
+      grid-column: 7/13;
+      grid-row:11/12;
+    }
+    
+
+
+  }
+
+  @media only screen and (min-width:900px) {  
+    .book1 {
+      grid-column: 1/7;
+    }
+
+    .text1 {
+      grid-column: 7/13;
+    }
+
+    .collapsible {
+    grid-column: 1/13;
+    grid-row: 2/3;
+    }
+
+    .text2 {
+      grid-column: 1/7;
+      grid-row:3/4;
+    }
+
+    .book2 {
+      grid-column: 7/13;
+      grid-row:3/4;
+    }
+
+    .collapsible2 {
+      grid-column: 1/13;
+    }
+
+    .book3 {
+      grid-column: 1/7;
+    }
+
+    .text3 {
+      grid-column: 7/13;
+    }
+
+    .collapsible3 {
+      grid-column: 1/13;
+    }
+
+    .text4 {
+      grid-column: 1/7;
+    }
+
+    .book4 {
+      grid-column: 7/13;
+    }
+
+    .collapsible4 {
+      grid-column: 1/13;
+    }
+
+    .book5 {
+      grid-column: 1/7;
+    }
+
+    .text5 {
+      grid-column: 7/13;
+    }
+
+    .bundle {
+      grid-column: 1/7;
+    }
+
+    .text6 {
+      grid-column: 7/13;
+    }
+
+    .collapsible5 {
+      grid-column: 1/13;
+    }
+
+  }     
+
+  </style>
 
   </head>
 
@@ -27,7 +352,7 @@
     <nav class=" navbar navbar-expand-md bg-black">
 
       <a href="index.html" class="navbar-brand fs-3 ms-3 text-white">
-        <img src="images/logo.png" style="height: 150px;"></a>
+        <img src="images/logo.png" style="height: 150px;" alt="Suzanne Collins logo"></a>
 
       <button class="navbar-toggler me-3 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
         <i class='bx bx-menu bx-md '></i>
@@ -76,7 +401,234 @@
     </nav>
     <!--End of Nav-->
 
-  <h1>Your content goes here</h1>
+    <div class="header">
+      <img src="images/under-header.png" class="img-fluid" alt="Header image for the series The Underland Chronicles">
+    </div>
+
+  <div class="container"> 
+
+    <!--Book 1 start-->
+  <div class="book1">
+    <img src="images/under1.png" class="img-fluid" width="400" alt="Novel, Gregor the Overlander">
+    </div>
+  
+    <div class="text1">
+      <h2>Gregor the Overlander</h2>
+      <h5>$8.99</h5>
+      <h4>By Suzanne Collins</h4>
+      <div class="buy">
+        <a href="https://www.barnesandnoble.com/w/gregor-the-overlander-suzanne-collins/1100295324?ean=9780439678131"><button type="button" class="btn btn-outline-danger btn-lg">Buy Now</button></a>
+        </div>
+  
+      <div class="stars">
+        <i class='bx-fw bx bxs-star bx-sm'></i>
+        <i class='bx-fw bx bxs-star bx-sm'></i>
+        <i class='bx-fw bx bxs-star bx-sm'></i>
+        <i class='bx-fw bx bxs-star bx-sm'></i>
+        <i class='bx-fw bx bxs-star-half' style='color:#ffffff' ></i> 4.4/5 on Barnes & Noble
+    </div>
+    
+      <p>Collins first novel of the series, <i>The Underland Chronicles,</i> follows an 11-year-old boy in New York City drawn into a fantastic subterranean world where humans coexist with giant anthropomorphic sewer dwellers such as rats and cockroaches.</p>
+      </div>
+  
+      <div class="collapsible">
+        <input type="checkbox" id="collapsible-head">
+        <label for="collapsible-head"> <h4>Reviews <i class='bx bxs-chevron-down' style='color:#ffffff'></i> </h4> </label> 
+        <div class="collapsible-text">
+            <h4>"Collins does a grand job of world-building, with a fine economy of words…Unlike Gregor, who cannot wait to leave, readers will likely find [the Underland] to be a fantastically engaging place."<div class="name"><i> - Publishers Weekly,</i> STARRED REVIEW</div></h4>
+
+            <h4>"[An} exceptional debut novel, a well-written, fast-moving, action-packed fantasy... [S]ure to be a solid hit with young fantasy fans."<div class="name"><i> - Booklist, </i>STARRED REVIEW</div></h4>
+
+        </div>
+  
+      </div><!--Collapsible div-->
+      <!--End of book 1-->
+
+      <!--Book 2 start-->
+    <div class="book2">
+      <img src="images/under2.png" class="img-fluid" width="400" alt="Novel, Gregor and the Prophecy of Bane">
+      </div>
+    
+      <div class="text2">
+        <h2>Gregor and the Prophecy of Bane</h2>
+        <h2>(Underland Chronicles Series #2)</h2>
+        <h5>$7.99</h5>
+        <h4>By Suzanne Collins</h4>
+        <div class="buy">
+          <a href="https://www.barnesandnoble.com/w/gregor-and-the-prophecy-of-bane-suzanne-collins/1100295326?ean=9780439650762"><button type="button" class="btn btn-outline-danger btn-lg">Buy Now</button></a>
+          </div>
+    
+        <div class="stars">
+          <i class='bx-fw bx bxs-star bx-sm'></i>
+          <i class='bx-fw bx bxs-star bx-sm'></i>
+          <i class='bx-fw bx bxs-star bx-sm'></i>
+          <i class='bx-fw bx bxs-star bx-sm'></i>
+          <i class='bx-fw bx bxs-star-half' style='color:#ffffff' ></i> 4.5/5 on Barnes & Noble
+      </div>
+
+
+        <p>
+        For the prophecy of Bane predicts that only Gregor – the “Overland warrior” – can destroy the great white hope of the rats and their bid to wipe out all humans in the Underland. But they also believe that if they kill Gregor's baby sister, Boots, it will break Gregor's spirit and he won't be able to stop them.</p>
+        </div>
+    
+        <div class="collapsible2">
+          <input type="checkbox" id="collapsible2-head">
+          <label for="collapsible2-head"> <h4>Reviews <i class='bx bxs-chevron-down' style='color:#ffffff'></i> </h4> </label> 
+          <div class="collapsible2-text">
+            <h4>"...fans will not be disappointed with this exciting, action-packed sequel, whose ending suggests more adventures to come." <div class="name"><i>- Booklist</i></div></h4>
+            
+            <h4>"Along with many Underlanders [rats notwithstanding], Gregor's fans will cheer the promise of future visits." <div class="name"><i>- The Horn Book Magazine</i></div></h4>
+
+            <h4>"...Fast-paced adventure and endearing characters make this book an excellent selection for younger fantasy readers." <div class="name"><i>- VOYA</i></div></h4>
+          </div>
+        </div><!--Collapsible2 div-->
+        <!--End of book 2-->
+
+         <!--Book 1 start-->
+  <div class="book3">
+    <img src="images/under3.png" class="img-fluid" width="400" alt="Novel, Gregor and the Curse of the Warmbloods">
+    </div>
+  
+    <div class="text3">
+      <h2>Gregor and the Curse of the Warmbloods</h2>
+      <h2>(Underland Chronicles Series #3)</h2>
+      <h5>$7.99</h5>
+      <h4>By Suzanne Collins</h4>
+      <div class="buy">
+        <a href="https://www.barnesandnoble.com/w/gregor-and-the-curse-of-the-warmbloods-suzanne-collins/1100295328?ean=9780439656245"><button type="button" class="btn btn-outline-danger btn-lg">Buy Now</button></a>
+        </div>
+  
+      <div class="stars">
+        <i class='bx-fw bx bxs-star bx-sm'></i>
+        <i class='bx-fw bx bxs-star bx-sm'></i>
+        <i class='bx-fw bx bxs-star bx-sm'></i>
+        <i class='bx-fw bx bxs-star bx-sm'></i>
+        <i class='bx-fw bx bxs-star-half' style='color:#ffffff' ></i> 4.5/5 on Barnes & Noble
+    </div>
+    
+      <p>With two prophecies fulfilled, Gregor is now focused on the Prophecy of Blood, which calls for Gregor and Boots to return to the Underland to help ward off a plague. But this time, his mother refuses to let him go until Ripred the rat convinces her that Gregor and Boots need to stay for only a brief meeting. Gregor's mom relents, provided she is allowed to travel with them. When they arrive in the subterranean city, the plague is spreading--and it has claimed one of his closest companions. Only then does Gregor start to understand how the illness plays with the fate of all warmblooded creatures, but he still doesn't know how he can help combat it.</p>
+      </div>
+  
+      <div class="collapsible3">
+        <input type="checkbox" id="collapsible3-head">
+        <label for="collapsible3-head"> <h4>Reviews <i class='bx bxs-chevron-down' style='color:#ffffff'></i> </h4> </label> 
+        <div class="collapsible3-text">
+            <h4>"Collins maintains the momentum, charm, and vivid settings of the original title. The characterizations continue to be complex with each new book, revealing new sides to familiar individuals. Fans of this inventive series and new readers alike will be instantly caught up in the action and will look forward to future installments." <div class="name"><i>- School Library Journal</i></div></h4>
+
+            <h4>"The strong, likeable characters, easy reading level, and nonstop action make this series attractive to even reluctant readers."<div class="name"><i> - VOYA</i></div></h4>
+
+        </div>
+  
+      </div><!--Collapsible div-->
+      <!--End of book 3-->
+
+        <!--Book 4 start-->
+    <div class="book4">
+      <img src="images/under4.png" class="img-fluid" width="400" alt="Novel, Gregor and the Marks of Secret">
+      </div>
+    
+      <div class="text4">
+        <h2>Gregor and the Marks of Secret</h2>
+        <h2>(Underland Chronicles Series #4)</h2>
+        <h5>$7.99</h5>
+        <h4>By Suzanne Collins</h4>
+        <div class="buy">
+          <a href="https://www.barnesandnoble.com/w/gregor-and-the-marks-of-secret-suzanne-collins/1100295331?ean=9780439791465"><button type="button" class="btn btn-outline-danger btn-lg">Buy Now</button></a>
+          </div>
+    
+        <div class="stars">
+          <i class='bx-fw bx bxs-star bx-sm'></i>
+          <i class='bx-fw bx bxs-star bx-sm'></i>
+          <i class='bx-fw bx bxs-star bx-sm'></i>
+          <i class='bx-fw bx bxs-star bx-sm'></i>
+          <i class='bx-fw bx bxs-star-half' style='color:#ffffff' ></i> 4.6/5 on Barnes & Noble
+      </div>
+
+
+      <p>
+        In the fourth book of the series, <i>The Underland Chronicles,</i> Gregor is drawn ever deeper into a brewing crisis. For generations, rats have run the mice out of whatever lands they've claimed, keeping them constantly on the move. But now the mice are disappearing and the young queen Luxa is determined to find out why.</p>
+        </div>
+    
+        <div class="collapsible4">
+          <input type="checkbox" id="collapsible4-head">
+          <label for="collapsible4-head"> <h4>Reviews <i class='bx bxs-chevron-down' style='color:#ffffff'></i> </h4> </label> 
+          <div class="collapsible4-text">
+            <h4>"In this penultimate volume in "The Underland Chronicles," Collins begins to gather herself for the grand finale...The cliffhanger ending will leave readers gasping as Gregor goes chasing another prophecy, the direst yet.)." <div class="name"><i>- Kirkus Reviews,</i> STARRED REVIEW</div></h4>
+            
+            <h4>"Collins keeps the tension and the stakes high; vivid description, expert pacing, and subtle character development all enhance this gripping fantasy adventure. At the conclusion, we leave Gregor heading into what promises to be an interspecies conflict of epic proportions. "Who would he be...if he survived?" Readers will have to wait for the fifth (and final?) book to find out. K.F."<div class="name"><i>- School Library Journal</i></div></h4>
+
+          </div>
+        </div><!--Collapsible4 div-->
+        <!--End of book 4-->
+
+           <!--Book 5 start-->
+    <div class="book5">
+      <img src="images/under5.png" class="img-fluid" width="400" alt="Novel, Gregor and the Code of Claw">
+      </div>
+    
+      <div class="text5">
+        <h2>Gregor and the Code of Claw</h2>
+        <h2>(Underland Chronicles Series #5)</h2>
+        <h5>$7.99</h5>
+        <h4>By Suzanne Collins</h4>
+        <div class="buy">
+          <a href="https://www.barnesandnoble.com/w/gregor-and-the-code-of-claw-suzanne-collins/1100295330?ean=9780439791441"><button type="button" class="btn btn-outline-danger btn-lg">Buy Now</button></a>
+          </div>
+    
+        <div class="stars">
+          <i class='bx-fw bx bxs-star bx-sm'></i>
+          <i class='bx-fw bx bxs-star bx-sm'></i>
+          <i class='bx-fw bx bxs-star bx-sm'></i>
+          <i class='bx-fw bx bxs-star bx-sm'></i>
+          <i class='bx-fw bx bxs-star-half' style='color:#ffffff' ></i> 4.6/5 on Barnes & Noble
+      </div>
+
+
+      <p>
+        When twelve-year-old Gregor finally learns the ancient prophecy, which foretells his death, he must gather his courage to defend Regalia from the army of rats, take his mother and sister home safely, and fight his own dark side.</p>
+        </div>
+    
+        <div class="collapsible5">
+          <input type="checkbox" id="collapsible5-head">
+          <label for="collapsible5-head"> <h4>Reviews <i class='bx bxs-chevron-down' style='color:#ffffff'></i> </h4> </label> 
+          <div class="collapsible5-text">
+            <h4>"Perhaps Collins's greatest achievement in these tales is the effortless introduction of weighty geopolitical ethics into rip-roaring adventure. It seems as elusive in the Underland as up above, but Gregor and his companions, including the unforgettable rat Ripred, may yet find a way. The resolution is bittersweet but faintly hopeful—a fitting end for an unflinchingly gutsy series whose deftly drawn characters have always lived dangerously." <div class="name"><i>- Kirkus Reviews,</i></div></h4>
+            
+            <h4>"Fans of the series will find much to appreciate, from an enigmatic prophecy to the complex rat Ripred, and they'll be drawn in by Collins's tight pacing and sense of urgency."<div class="name"><i> - School Library Journal</i></div></h4>
+
+          </div>
+        </div><!--Collapsible4 div-->
+        <!--End of book 5-->
+
+
+          <!--Bundle start-->
+  <div class="bundle">
+    <img src="images/under-bundle.png" class="img-fluid" width="400" alt="The Hunger Games 4 book bundle">
+    </div>
+  
+    <div class="text6">
+      <h2>The Underland Chronicles: Five Book Set</h2>
+      <h5>$21.00</h5>
+      <h4>By Suzanne Collins</h4>
+      <div class="buy">
+        <a href="https://www.amazon.com/Suzanne-Collins-Underland-Chronicles-Overlander/dp/0545166810"><button type="button" class="btn btn-outline-danger btn-lg">Buy Now</button></a>
+        </div>
+  
+      <div class="stars">
+        <i class='bx-fw bx bxs-star bx-sm'></i>
+        <i class='bx-fw bx bxs-star bx-sm'></i>
+        <i class='bx-fw bx bxs-star bx-sm'></i>
+        <i class='bx-fw bx bxs-star bx-sm'></i>
+        <i class='bx-fw bx bxs-star bx-sm'></i> 4.8/5 on Amazon
+    </div>
+    </div>
+
+<!--Footer-->
+<footer>
+  <p>&copy; 2023 Suzanne Collins. All Rights Reserved. </p>
+</footer>
+
+  </div><!--Container div-->
 
 <!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
